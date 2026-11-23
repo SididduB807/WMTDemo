@@ -46,3 +46,7 @@ Re-run `npm run test:e2e` on an uninterrupted local or CI browser host before tr
 The follow-up request sets the site URL to `https://wmt.fncai.org/`, superseding the original no-custom-domain requirement. `public/CNAME` configures the hostname for the deployment artifact, and the HTML canonical link uses that HTTPS URL. The README includes the corresponding Pages and DNS setup. This update does not configure DNS, change repository settings, or perform a live deployment.
 
 The production build passed after this update. Assertions confirmed that `dist/CNAME` contains exactly `wmt.fncai.org` and `dist/index.html` contains the matching HTTPS canonical link. Live domain availability was not verified.
+
+## Publication preparation — 23 November 2026
+
+The latest interface changes place the workflow navigation below the introduction, expand the desktop workspace to at least 680px, and add the requested blue-and-yellow palette. All 23 unit tests and the production build passed again before publication. A live DNS check confirmed that `wmt.fncai.org` now has a CNAME resolving to GitHub Pages. Publication remains pending GitHub authentication and repository deployment; DNS resolution alone does not establish that the application is live.

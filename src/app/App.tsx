@@ -21,7 +21,15 @@ export function App() {
   return <div className="app-shell">
     <a href="#main" className="skip-link">Skip to workspace</a>
     <AppHeader onDiscuss={() => dispatch({ type: 'discuss' })} discussRef={discussRef} />
-    <main id="main">{state.discussion ? <DiscussionState onBack={onBack} /> : <><DemoIntroduction /><DemoWorkspace agent={agent} session={session} snapshot={snapshot} playing={state.playing} dispatch={dispatch} /><div className="bottom-control-rail"><AgentNavigation activeId={state.activeAgent} dispatch={dispatch} /><PlaybackControls step={session.step} playing={state.playing} dispatch={dispatch} /></div><p className="workspace-scope">{agent.scope}</p></>}</main>
+    <main id="main">{state.discussion ? <DiscussionState onBack={onBack} /> : <>
+      <DemoIntroduction />
+      <div className="workflow-control-rail">
+        <AgentNavigation activeId={state.activeAgent} dispatch={dispatch} />
+        <PlaybackControls step={session.step} playing={state.playing} dispatch={dispatch} />
+      </div>
+      <DemoWorkspace agent={agent} session={session} snapshot={snapshot} playing={state.playing} dispatch={dispatch} />
+      <p className="workspace-scope">{agent.scope}</p>
+    </>}</main>
     <SimulationDisclosure />
     <div className="sr-only" aria-live="polite" aria-atomic="true">{state.announcement}</div>
   </div>;

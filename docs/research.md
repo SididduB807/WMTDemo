@@ -22,6 +22,8 @@ All site, order, seller, project, case, policy, event, cost, and evidence record
 
 The design follows the explicit specification in the attachment: warm neutral surfaces, a dominant three-panel workspace, a subtle blue frame, thin dividers, system typography, Lucide icons, and restrained state colors. Blue is a demonstration design choice inspired by familiar retail cues, not a claimed official brand value. There are no client logos, spark motifs, proprietary illustrations, official document templates, or endorsement claims.
 
+The follow-up palette request adds Walmart-inspired blue (`#0071CE`), deep blue (`#004C91`), navy (`#041E42`), and yellow (`#FFC220`). These demo styling choices appear in the workspace header, active workflow tab, playback control, and field highlights. Evidence panels retain neutral surfaces, and green and rust retain their review-status meanings. These palette values have not been independently verified against a current official brand guide.
+
 ## Tooling verification
 
 Network access was available for dependency installation and release checks. This is separate from public company research. GitHub’s release redirects were checked for these standard deployment actions:
