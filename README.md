@@ -1,6 +1,6 @@
 # Retail Operations Lab
 
-Site URL: **[wmt.fncai.org](https://wmt.fncai.org/)**
+Live site: **[wmt.fncai.org](https://wmt.fncai.org/)** — published on GitHub Pages with HTTPS enforced.
 
 A static, interactive exploration of three narrowly scoped retail agent workflows: fulfillment investigation, investment evidence, and case handoff. Each uses invented records, deterministic calculations, inspectable field-level sources, and local human review.
 
@@ -89,7 +89,9 @@ The implementation uses React, TypeScript, Vite, Tailwind CSS, Lucide icons, and
 
 ## GitHub Pages
 
-No source-code edits or repository-specific settings in code are needed:
+The site is published from [this repository](https://github.com/SididduB807/WMTDemo). Deployment and a live HTTPS browser smoke check passed on 23 November 2026. The custom domain is configured, its certificate is approved, and HTTPS is enforced.
+
+To configure a separate deployment, no source-code edits or repository-specific settings in code are needed:
 
 1. Push this repository to GitHub.
 2. Open **Settings → Pages**.
@@ -104,4 +106,4 @@ The configured site URL is `https://wmt.fncai.org/`. The `public/CNAME` file con
 
 Vite uses `base: './'`, assets are relative, and navigation uses in-page state. The browser suite serves the **built files** at both a domain root and `/demo-repo/`; it does not substitute a development-server path check.
 
-No remote repository or live deployment is configured by this project. See [verification](docs/verification.md) for executed checks and [research notes](docs/research.md) for source limitations.
+See [verification](docs/verification.md) for deployment and test results, including the historical full-browser-suite qualification, and [research notes](docs/research.md) for source limitations.
